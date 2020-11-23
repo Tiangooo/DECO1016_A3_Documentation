@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<h1>1MW Website Development Documentation</h1>
+	</header>
+
+	<!-- NAVIGATION: Add your own list item links based on secion IDs and heading elements -->
+	<nav>
+		<ul>
+			<li><a href="#background">1. Background</a></li>
+      <li><a href="#user-testing">2. User testing</a></li>
+      <li><a href="#development">3. Development</a></li>
+			<ul>
+				<li><a href="#changes">3.1.Changes in new iteration</a></li>
+        <ul>
+          <li><a href="#nav-ft">3.1.1. Navigation and footer</a></li>
+          <li><a href="#form">3.1.2. Form</a></li>
+          <li><a href="#hd">3.1.3. Home page heading</a></li>
+          <li><a href="#cp">3.1.4. Colour palette</a></li>
+          <li><a href="#shape">3.1.5. Shape</a></li>
+          <li><a href="#content">3.1.6. Content</a></li>
+          <li><a href="#transition">3.1.7. Transition</a></li>
+          <li><a href="#cursor">3.1.8. Cursor status</a></li>
+        </ul>
+			</ul>
+			<li><a href="#annotation">4. Annotations for new features</a></li>
+      <ul>
+        <li><a href="#home-4">4.1. Home page</li>
+        <li><a href="#join-4">4.2. Join-page</li>
+        <li><a href="#donate-4">4.3. Donate page</li>
+        <li><a href="#about-4">4.4. About Us page</li>
+      </ul>
+			<li><a href="#flow">5. Overall flow</a></li>
+			<li><a href="#accessibility">6. Accessibility testing</a></li>
+      <li><a href="#usability">7. Usability testing</a></li>
+      <li><a href="#reference">8. Reference</a></li>
+
+		</ul>
+	</nav>
+
+	<!-- MAIN CONTENT: Add your own sections as needed -->
+	<main>
+		<section id="background">
+			<h2>1. Recap of background:</h2>
+			<p>1 Million Women is a medium-sized non-profit organisation based in Australia, it is founded by Natalie Isaacs in 2006. The <strong>main goal</strong> of this organisation is calling upon <strong>women and girls</strong> all over the world to tackle the <strong>climate crisis</strong> through a <strong>lifestyle revolution</strong>.</p>
+      <figure>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/1pNnW2cIkyg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<figcaption>1 Million Women Introduction Video</figcaption>     
+			</figure>
+      <ul class="in-text-citation">
+        <li>(1 Million Women, 2015)</li>
+      </ul>  
+    </section> 
+    <section id="user-testing">
+			<h2>2. User testing before final prototyping:</h2>
+			<ul>
+        <li><strong>Method</strong>: Think Aloud</li>
+        <li><strong>Task</strong>: Use the interactive prototype on Sketch software to navigate the interface and “donate” to 1 Million Women.</li>
+        <li><strong>2 Participants</strong>:</li>
+      <ul>
+         <blockquote>“ The navigation on the landing page is confusing to me, since it repeats with the black navigation bar below ” but “ the donation page looks visually pleasing ”---Yan</blockquote>
+         <blockquote>“ I am a bit confused about the images in the ‘Take Actions’ part ” but “ I think the NASA website is very meaningful. ”---Arya</blockquote>
+    </section>
+
+
+    <section id="development">
+			<h2>3. Development from proposal:</h2>
+			<p>Based on the mood board, user profile, personas from the proposal and gathered feedback from user testing,  this website prototype is developed using <strong>HTML and CSS</strong> to achieve the main goal of 1 Million Women organisation as <strong>encouraging climate actions</strong>. The main visual <strong>style and structure</strong> remain the same to represent the identity of the organisation, but minor iterations are made to provide a better user <strong>experience and usabilities</strong>.</p>
+      <h3 id="changes">3.1. Changes in new iteration:</h3>
+      <p>Among various proposed subpages, the <strong>home page</strong> and the other <strong>3 subpages</strong>, including <strong>About Us, Join and Donate</strong>, can provide a clear call-to-action for users to join the organisation while educating the values of climate actions.</p>
+      <p><strong>Key words</strong>: Consistency & Simplicity</p>
+
+      <h4 id="nav-ft">3.1.1. Navigation and footer:</h4>
+      <figure>
+				<img src="images/nav-footer-change.png" alt="Navigation and footer"/>
+        <figcaption>Navigation and footer style</figcaption>
+      </figure>
+      <ul>
+        <li>While the initial proposal used a static navigation bar on the top of each page and a thick footer with an icon and related links, the final prototype used a sticky navigation bar and a simpler footer without the icon for simplicity.</li>
+        <li>For the mobile interface, the responsive navigation bar retains the menu icon and  organisation icon and the “donate” and “join” button will show by clicking on the menu icon.</li>
+      </ul>
+
+      <h4 id="form">3.1.2. Form:</h4>
+      <figure>
+				<img src="images/forms-change.png" alt="Form"/>
+        <figcaption>Form style</figcaption>
+      </figure>
+      <ul>
+        <li>The inline input on the desktop interface will wrap to the next line if the screen size is smaller, therefore the user can fill the form more easily on mobile devices.</li>
+      </ul>
+      <h4 id="hd">3.1.3. Home page heading:</h4>
+      <figure>
+				<img src="images/hr-change.png" alt="Home page heading"/>
+        <figcaption>Home page heading style</figcaption>
+      </figure>
+      <ul>
+        <li>Instead of overlapping  the heading on the line, now the gradient-coloured horizontal line can divide the home page into different sections more clearly.</li>
+      </ul>
+
+      <h4 id="cp">3.1.4. Colour palette:</h4>
+      <figure>
+				<img src="images/color-palette-change.png" alt="Colour palette"/>
+        <figcaption>Colour palette style</figcaption>
+      </figure>
+      <ul>
+        <li>Some visual styles have been changed for higher color contrast ratios, therefore to improve the level of accessibility for visually impaired people: e.g. text colour of buttons, background color of text.</li>
+      </ul>
+      <h4 id="shape">3.1.5. Shape:</h4>
+      <figure>
+				<img src="images/shape-change.png" alt="Shape"/>
+        <figcaption>Shape style</figcaption>
+      </figure>
+      <ul>
+        <li>Use rounded and organic shapes can build focus, positivity, grab attention and is easier for visual processing(Pumpkin Web Design Manchester, 2020): e.g. buttons, images and article containers.</li>
+      </ul>
+      <h4 id="content">3.1.6. Content:</h4>
+      <figure>
+				<img src="images/content-change.png" alt="Content"/>
+        <figcaption>Content style</figcaption>
+      </figure>
+      <ul>
+        <li>Use engaging images and positive tones of speaking: e.g. "Will you join our movement?" "Are you with us?" "Join us and get counted with the other 832,454 women"</li>
+      </ul>
+      <h4 id="transition">3.1.7. Transition:</h4>
+      <figure>
+				<img src="images/transition-change.png" alt="Transition"/>
+        <figcaption>Transition style</figcaption>
+      </figure>
+      <ul>
+        <li>Buttons styles will change when hovering and give visual feedback:</li>
+        <ul>
+          <li>Text colour of the buttons on the landing page will change into white;</li>
+          <li>Background colour of the “Learn more” buttons will change into tiffany blue #04BFB3.</li>
+        </ul>
+        <li>Background colour of inputs in focus will change from white to platinum grey #E3E3E3 and show the state has been changed as selected.</li>
+      </ul>
+      <h4 id="cursor">3.1.8. Cursor status:</h4>
+      <figure>
+				<img src="images/cursor-change.png" alt="Cursor"/>
+        <figcaption>Cursor style</figcaption>
+      </figure>
+      <ul>
+        <li>The conceptual model of pointer cursor is a perceptible affordance that signifies the element is clickable. On the contrary, the default cursor signifies this element could be selected but not clickable.</li>
+      </ul>
+		</section>
+
+
+		<section id="annotation">
+			<h2>4. Annotations for new features:</h2>
+			<h3 id="home-4">4.1. Home page:</h3>
+      <h4>Landing page:</h4>
+      <figure>
+				<img src="images/landing.png" alt="landing"/>
+        <figcaption>Landing page interface</figcaption>
+      </figure>
+      <ul>
+        <li>Rather than using a monochrome photo, the new iteration uses a dark transparent mask on the original photograph to retain the lively colour and exemplify the optimum attitude of women power.</li>
+        <li>Due to the sticky navigation bar, the navigation on the landing page would be no longer necessary. Therefore, by adding a “learn” button, the home page will smoothly scroll down to the main content.</li>
+      </ul>
+      <h4>Main content: </h4>
+      <figure>
+				<img src="images/main.png" alt="main"/>
+        <figcaption>Main content interface</figcaption>
+      </figure>
+      <ul>
+        <li>Content for “About Us” section has been reduced for simplicity on the home page and encourages user to click on the “Learn more” button for more details.</li>
+        <li>The multiple-sized photos displayed in an image gallery is unnecessarily complex to use. Therefore, the iterated “Take Actions” section uses images in a consistent size and is animated as an auto-slideshow.</li>
+      </ul>
+
+      <h3 id="join-4">4.2. Join page:</h3>
+      <figure>
+				<img src="images/join.png" alt="join"/>
+        <figcaption>Join page interface</figcaption>
+      </figure>
+      <p>The final prootype adds a new option of 'Country' to the form: 1 million women is a global organisation that therefore, it is necessary to collect the information about which country the user is living in.</p>
+
+      <h3 id="donate-4">4.3. Donate page:</h3>
+      <figure>
+				<img src="images/donate.png" alt="donate"/>
+        <figcaption>Donate page interface</figcaption>
+      </figure>
+      <p>The initial proposal used a progression bar to demonstrate steps of proceeding the donation. However, the final prototype used direct headings assisted with “Back” ”Next” “Previous” and ”Proceed” buttons to amplify the discoverability and offer an intuitive user experience.</p>
+      <h3 id="about-4">4.4. About Us page:</h3>
+      <figure>
+				<img src="images/about.png" alt="about"/>
+        <figcaption>About Us page interface</figcaption>
+      </figure>
+      <p>To improve accessibility, background colour of article cards changed to dark slate grey (#345151) for higher contrast.</p>
+		</section>
+
+    <section id="flow">
+      <h2>5. Overall flow:</h2>
+      <figure>
+				<img src="images/flow-home.png" alt="flow-home"/>
+        <figcaption>Flow: Home page</figcaption>
+      </figure>
+      <p>The home page provides with 3 buttons for “Join” “Donate“ as call-to-action and “Learn” as eduction to invite users to browse the main content on the home page. The main content includes educational contents such as statistics of climate change with an interactive Climate Time machine iframe from NASA in “About Climate Change” section, a brief introduction to the organisation in “About Us” section, and further get back to the call-to-action contents of “Take Actions” and “Donating” sections.</p>
+      <figure>
+				<img src="images/flow-about.png" alt="flow-about"/>
+        <figcaption>Flow: About Us page</figcaption>
+      </figure>
+      <p>About Us page provides information about the founder, team and partners to improve the trustworthiness of 1 Million Women, therefore learning more about the values of “women power” and “climate actions “ behind the organisation and also encouraging people to join in as a member.</p>
+      <figure>
+				<img src="images/flow-join.png" alt="flow-join"/>
+        <figcaption>Flow: Join page</figcaption>
+      </figure>
+      <p>Join page encourages users to join using the statistics of the current member and provides a form for a simple and quickly registration including “First name”, “Last name”, “email” and “password”, as well as a dropdown menu for “country” to collect valuable information that could possibly be interesting to the organisation and stored at back-end system.</p>
+      <figure>
+				<img src="images/flow-donate.png" alt="flow-donate"/>
+        <figcaption>Flow: Donate page</figcaption>
+      </figure>
+      <p>Donate page provides 3 steps of donating to the organisation, the purpose of each step is highlighted in the heading and explained in the paragraphs underneath. Step1 requires the user to choose a donation plan, it could be either once-off, weekly and monthly donation with a suggested amount of money but also provides flexibilities for uses to choose a preferred plan. Step2 asks users to leave their names and contact information as records without too much obstructive content. Step3 is a payment gateway that allows users to choose a payment method and fill in the bank details for proceeding.</p>
+    </section>
+
+		<section id="accessibility">
+			<h2>6. Accessibility testing:</h2>
+      <p>Accessibility is a practice of making the website available and readable for more groups. 1 Million Women is a global organisation that aims at all females which include different abilities to access the website, therefore accessibility is an essential factor that needs to be considered during the process of web development.</p>
+      <p>This website is evaluated by <a href="https://wave.webaim.org/">WAVE</a>, an online accessibility tool, the overall result is optimum. </p>
+      <figure>
+				<img src="images/accessibility.png" alt="accessibility testing result"/>
+        <figcaption>Accessibility testing result</figcaption>
+      </figure>
+      <ul class="in-text-citation">
+        <li>(WAVE,2020)</li>
+      </ul>
+		</section>
+
+    <section id="usability">
+			<h2>7. Usability testing (SUS):</h2>
+      <p>System Usability Score(SUS) test is a widely used tool for evaluating usabilities, an average score of 68 is used as the standard of industries.</p>
+      <p>After gathering multiple responses form participants, the average score of the final prototype is 83.75 > 68.</p>
+      <p>See <a href="https://docs.google.com/forms/d/18Q2Oz5GsksYbWf_YQzDHL2mdi4FycmkXFSZ39qY5cgc/viewanalytics">SUS responses</a></p>
+      <ul class="in-text-citation">
+        <li>(Brooke,1996)</li>
+      </ul>
+    </section>
+
+    <section id="reference">
+			<h2>Reference:</h2>
+
+      <ul>
+        <li>1 Million Women. (2015, March 12). 1 Million Women Introduction Video[Video]. YouTube. Retrieve from: <a href="https://www.youtube.com/watch?v=1pNnW2cIkyg-">https://www.youtube.com/watch?v=1pNnW2cIkyg-</a></li>
+        <li>Brooke, J. (1996). SUS: a “quick and dirty’ usability. Usability evaluation in industry, 189. Retrieved from: <a href="http://www.tbistafftraining.info/smartphones/documents/b5_during_the_trial_usability_scale_v1_09aug11.pdf">http://www.tbistafftraining.info/smartphones/documents/b5_during_the_trial_usability_scale_v1_09aug11.pdf</a></li>
+        <li>Pumpkin Web Design Manchester. (2020). Advantages Of Rounded Rectangle Call To Action Buttons. [Article]. Retrieve from: <a href="https://www.pumpkinwebdesign.com/web-design-manchester/advantages-of-rounded-rectangle-call-to-action-buttons/">https://www.pumpkinwebdesign.com/web-design-manchester/advantages-of-rounded-rectangle-call-to-action-buttons/</a></li>
+        <li>WAVE. (2020). WAVE Web Accessibility Evaluation Tool. [Website]. Retrieved from: <a href="https://wave.webaim.org/">https://wave.webaim.org/</a></li>
+      </ul>
+    </section>
+	</main>
+
+  <!-- FOOTER: Update with your details --> 
+	<footer>
+		[Tian Qin] - [480136286]
+	</footer>
+	</script>
+</body>
+
+</html>
