@@ -166,7 +166,11 @@ footer {
 
 /* Content
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+.mobile{
+  width:35%;
+  height:auto;
+  margin:auto;
+}
 figure {
 	padding: 1em 0;
 }
@@ -253,5 +257,9 @@ blockquote {
 
 #reference a, #reference li{
   color: #919499;
+}
+
+#reference a{
+  word-wrap: break-word;
 }
 
